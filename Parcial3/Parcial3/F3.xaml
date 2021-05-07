@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parcial3.F3">
+    <ContentPage.Content>
+
+        <Grid>
+            <Image Source="Loginpage.jpg" Aspect="AspectFill"/>
+            <BoxView Color="#04eaa6" Opacity="0.8"/>
+          
+
+                <StackLayout Grid.Row="2" HorizontalOptions="Center" Margin="0,0,0,50">
+
+                    <Label Text="Formulario 3" HorizontalOptions="Center" FontSize="Title" BackgroundColor="#04eaa6" TextColor="Black"/>
+                    <StackLayout HorizontalOptions="Center" Orientation="Horizontal" >
+
+                        <Image Grid.Row="0" Source="Logoapp.jpg" WidthRequest="75" HeightRequest="75" />
+                      
+                            <Entry Placeholder="Iniciales del nombre completo"  x:Name="txtname" Keyboard="Text" MaxLength="4" PlaceholderColor="Black"  BackgroundColor="#04eaa6"/>
+
+                            <Label Text="" x:Name="label" TextColor="OrangeRed"/>
+                            <Button Clicked="Button_Clicked" Text="Continuar" BackgroundColor="Black" BorderRadius="20" TextColor="#04eaa6" />
+
+
+
+
+                      
+                    </StackLayout>
+                </StackLayout>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

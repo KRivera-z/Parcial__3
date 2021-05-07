@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parcial3.MainPage">
+
+    <ContentPage.Content>
+
+        <Grid>
+            <Image Source="Loginpage.jpg" Aspect="AspectFill"/>
+            <BoxView Color="#04eaa6" Opacity="0.8"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="Logoapp.jpg" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"/>
+
+                <StackLayout Grid.Row=" 1" Padding="30,20">
+                    <Entry Placeholder=" Correo electronico" PlaceholderColor="White" x:Name="txtEmail"/>
+                    <Entry Placeholder=" Contraseña" PlaceholderColor="White" IsPassword="True" x:Name="txtPin"/>
+                    <Label Text="" x:Name="label" TextColor="Red"/>
+                    <Button Clicked="Button_Clicked" Text="Iniciar sesion" BackgroundColor="White" BorderRadius="20" TextColor="#04eaa6" />
+                   
+                        
+                
+                    <StackLayout Orientation="Horizontal">
+
+                        
+                        <Label Text="¿Recuperar contraseña?"/>
+                        <Label Text="Registarse" HorizontalOptions="EndAndExpand" FontAttributes="Bold"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" HorizontalOptions="Center" Margin="0,0,0,50">
+
+                    <Label Text="Iniciar sesion con:" HorizontalOptions="Center"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Grid.Row="0" Source="Logoapp.png" WidthRequest="45" HeightRequest="45"/>
+                        <Image Grid.Row="0" Source="Logoapp.png" WidthRequest="45" HeightRequest="45"/>
+                        <Image Grid.Row="0" Source="Logoapp.png" WidthRequest="45" HeightRequest="45"/>
+
+
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

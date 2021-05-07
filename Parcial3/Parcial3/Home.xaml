@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parcial3.Home">
+    <ContentPage.Content>
+
+        <Grid>
+            <Image Source="Loginpage.jpg" Aspect="AspectFill"/>
+            <BoxView Color="#04eaa6" Opacity="0.8"/>
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="2" HorizontalOptions="Center" Margin="0,0,0,50">
+
+                <Label Text="Formularios" HorizontalOptions="Center" FontSize="Title"/>
+                <StackLayout HorizontalOptions="Center" Orientation="Horizontal" >
+
+                    <Image Grid.Row="0" Source="Logoapp.png" WidthRequest="75" HeightRequest="75" />
+                    <StackLayout Grid.Row=" 1" Padding="30,20">
+                            <Button Text=" Formulario 1" TextColor="White" x:Name="txtf1" Clicked="txtf1_Clicked"/>
+                            <Button Text=" Formulario 2" TextColor="White" x:Name="txtf2" Clicked="txtf2_Clicked"/>
+                            <Button Text=" Formulario 3" TextColor="White" x:Name="txtf3" Clicked="txtf3_Clicked"/>
+                            <Button Text=" Formulario 4" TextColor="White" x:Name="txtf4" Clicked="txtf4_Clicked"/>
+                         
+                    <Label Text="" x:Name="label" TextColor="OrangeRed"/>
+
+
+
+
+
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
